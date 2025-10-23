@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Departments - MediNest Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets\img\image.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MediNest
+  * Template URL: https://bootstrapmade.com/medinest-bootstrap-hospital-template/
+  * Updated: Aug 11 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="departments-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="assets\img\image.png" alt="">
+        <h1 class="sitename">Body<span>Fits</span></h1>
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="container-bmi">
+        <div class="row d-flex justify-content-center text-center">
+          <div class="col-lg-8">
+            <h1 class="heading-title" id="greet-bmi">Hello name, Your BMI is</h1>
+            <!-- BMI Result -->
+            <div class="result-bmi">
+              <h1 class="bmi-score" id="bmiScore">0</h1>
+              <h3 class="bmi-category" id="bmiCategory">N/A</h3>
+            </div>
+            <!-- BMI Range -->
+            <div class="bmi-range-group">
+              <section class="underweight">
+                <div class="bmi-line"></div>
+                <h5 class="bmi-label">Underweight</h5>
+                <h4 class="bmi-number">&lt; 18.5</h4>
+              </section>
+              <section class="normal">
+                <div class="bmi-line"></div>
+                <h5 class="bmi-label">Normal</h5>
+                <h4 class="bmi-number">18.5 - 24.9</h4>
+              </section>
+              <section class="overweight">
+                <div class="bmi-line"></div>
+                <h5 class="bmi-label">Overweight</h5>
+                <h4 class="bmi-number">25 - 29.9</h4>
+              </section>
+              <section class="obese">
+                <div class="bmi-line"></div>
+                <h5 class="bmi-label">Obese</h5>
+                <h4 class="bmi-number">&gt; 30</h4>
+              </section>
+              <!-- BMI Indicator -->
+              <div id="bmiIndicator" class="bmi-indicator"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-bmi" style="margin-top: 40px;">
+        <div class="row d-flex justify-content-center text-center">
+          <div class="col-lg-8">
+          </div>
+          <h1 class="heading-title" id="idealBody-greet">Your ideal body weight is</h1>
+          <div class="result-idealBody">
+            <h1 class="idealBody" id="idealBody">0</h1>
+            <h1 class="reachIdealBody" id="reachIdealBody">You need x kilogram to reach your body weight</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recalculate">
+      <a href="calculate.html" class="btn btn-primary">Recalculate</a>
+      </a>
+    </div>
+    </div><!-- End Page Title -->
+
+    <div>
+      <h1 class="heading-title" style="margin: auto; text-align: center; margin-top: 100px;"><strong>|-- Choose Your
+          Program --|</strong></h1>
+    </div>
+
+    <!-- Departments Section -->
+    <section id="departments" class="departments section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <!-- Department Item -->
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100" id="maintain-click"
+            onclick="window.location.href='program.html'" style="cursor: pointer;">
+            <div class="department-item">
+              <div class="department-content">
+                <div class="department-header">
+                  <div class="department-icon">
+                    <i class="fas fa-heartbeat"></i>
+                  </div>
+                  <div class="department-info">
+                    <h3>Maintain Weight</h3>
+                    <span class="department-category" id="maintain-calories-program">calories / day</span>
+                  </div>
+                </div>
+                <p style="text-align: justify;">Maintaining weight is the process of keeping your body weight stable by
+                  balancing energy intake (calories from food) and energy expenditure (calories burned through activity)
+                  over time.</p>
+                <div class="department-features">
+                  <span class="feature-badge">Balance Life</span>
+                  <span class="feature-badge">Stay Fit</span>
+                </div>
+              </div>
+              <div class="department-image">
+                <img src="assets/img/health/maintain-weight.jpg" alt="Cardiology Department" class="img-fluid">
+                <div class="department-overlay">
+                  <a href="#" class="department-link">
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Department Item -->
+
+          <!-- Department Item -->
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200" id="mildWeight-click"
+            onclick="window.location.href='program.html'" style="cursor: pointer;">
+            <div class="department-item">
+              <div class="department-content">
+                <div class="department-header">
+                  <div class="department-icon">
+                    <i class="fas fa-brain"></i>
+                  </div>
+                  <div class="department-info">
+                    <h3>Mild Weight Loss</h3>
+                    <span class="department-category" id="mildWeightLoss-calories-program">calories / day</span>
+                  </div>
+                </div>
+                <p style="text-align: justify;">Mild weight loss can refer to a healthy, gradual weight loss of 1 to 2
+                  pounds per week through diet and exercise, or it can describe unintentional, subtle weight loss that
+                  is still a symptom of an underlying issue. </p>
+                <div class="department-features">
+                  <span class="feature-badge">Healthy Weight Loss</span>
+                  <span class="feature-badge">Gentle Diet Plan</span>
+                </div>
+              </div>
+              <div class="department-image">
+                <img src="assets/img/health/mildWeight.jpg" alt="Neurology Department" class="img-fluid">
+                <div class="department-overlay">
+                  <a href="#" class="department-link">
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Department Item -->
+
+          <!-- Department Item -->
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="300" id="weight-click"
+            onclick="window.location.href='program.html'" style="cursor: pointer;">
+            <div class="department-item">
+              <div class="department-content">
+                <div class="department-header">
+                  <div class="department-icon">
+                    <i class="fas fa-bone"></i>
+                  </div>
+                  <div class="department-info">
+                    <h3>Weight Loss</h3>
+                    <span class="department-category" id="WeightLoss-calories-program">calories / day</span>
+                  </div>
+                </div>
+                <p style="text-align: justify;">Weight loss is a reduction in total body mass, which can be achieved
+                  through a conscious effort like diet and exercise or occur unintentionally due to illness. Healthy
+                  weight loss involves burning more calories than are consumed through a combination of a balanced diet
+                  and regular physical activity.</p>
+                <div class="department-features">
+                  <span class="feature-badge">Weight Loss Program</span>
+                  <span class="feature-badge">Healthy Diet</span>
+                </div>
+              </div>
+              <div class="department-image">
+                <img src="assets/img/health/weightLoss.jpg" alt="Orthopedics Department" class="img-fluid">
+                <div class="department-overlay">
+                  <a href="#" class="department-link">
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Department Item -->
+
+          <!-- Department Item -->
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="400" id="extremeWeight-click"
+            onclick="window.location.href='program.html'" style="cursor: pointer;">
+            <div class="department-item">
+              <div class="department-content">
+                <div class="department-header">
+                  <div class="department-icon">
+                    <i class="fas fa-baby"></i>
+                  </div>
+                  <div class="department-info">
+                    <h3>Extreme Weight Loss</h3>
+                    <span class="department-category" id="ExtremeWeightLoss-calories-program">calories / day</span>
+                  </div>
+                </div>
+                <p style="text-align: justify;">Extreme weight loss is a rapid or unintentional loss of body mass, often
+                  defined as losing more than 1 to 2 pounds per week or more than 5–10% of body weight in 6–12 months
+                </p>
+                <div class="department-features">
+                  <span class="feature-badge">Unexplained Weight Loss</span>
+                  <span class="feature-badge">Cachexia</span>
+                </div>
+              </div>
+              <div class="department-image">
+                <img src="assets/img/health/extremeWeight.jpg" alt="Pediatrics Department" class="img-fluid">
+                <div class="department-overlay">
+                  <a href="#" class="department-link">
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Department Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Departments Section -->
+
+  </main>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    let score = localStorage.getItem("bmi")
+    let category = localStorage.getItem("category")
+    let percentage = localStorage.getItem("percentage")
+    let nickname = localStorage.getItem("nama")
+    let ideal = localStorage.getItem("ideal")
+    let reachIdeal = localStorage.getItem("reachIdeal")
+    let calories = localStorage.getItem("calorie")
+
+
+    let result0 = document.getElementById("greet-bmi")
+    let result1 = document.getElementById("bmiScore")
+    let result2 = document.getElementById("bmiCategory")
+    let result3 = document.getElementById("bmiIndicator")
+    let result4 = document.getElementById("idealBody")
+    let result5 = document.getElementById("reachIdealBody")
+    let result6 = document.getElementById("maintain-calories-program")
+    let result7 = document.getElementById("mildWeightLoss-calories-program")
+    let result8 = document.getElementById("WeightLoss-calories-program")
+    let result9 = document.getElementById("ExtremeWeightLoss-calories-program")
+
+    // let clickMaintain = document.getElementById("maintain-click")
+    // let clickMildWeight = document.getElementById("mildWeight-click")
+    // let clickWeight = document.getElementById("weight-click")
+    // let clickExtremeWeight = document.getElementById("extremeWeight-click")
+
+    result0.innerHTML = `Hello <span style="color : #099aa7"><strong>${nickname}</strong></span>, Your <span style="color : #6c1b1b"><strong>BMI</strong></span> is`
+    result1.textContent = score
+    result2.textContent = category
+
+    if (result2.textContent === "Underweight") {
+      result1.style.color = "#ffa500"
+    } else if (result2.textContent === "Healthy") {
+      result1.style.color = "#008000";
+    } else if (result2.textContent === "Overweight") {
+      result1.style.color = "#f08080";
+    } else if (result2.textContent === "Obese") {
+      result1.style.color = "#dc143c"
+    }
+
+    result3.style.left = percentage
+
+    result4.innerHTML = `<span style="color : #24d1b1">${ideal}</span>`
+    if (reachIdeal < 0) {
+      result5.innerHTML = `You need to <span style="color : #bf3b51"><strong>lose ${Math.abs(reachIdeal)}kg</strong></span>`
+    } else if (reachIdeal == 0) {
+      result5.innerHTML = `your weight is already <span style="color : #24d1b1">Ideal</span>`
+    } else {
+      result5.innerHTML = `You need to <span style="color : #3bbf72"><strong>gain ${Math.abs(reachIdeal)}kg</strong></span>`
+    }
+
+    result6.innerHTML = `${parseInt(calories)} calories / day`
+    result7.innerHTML = `${parseInt(calories * 90 / 100)} calories / day`
+    result8.innerHTML = `${parseInt(calories * 79 / 100)} calories / day`
+    result9.innerHTML = `${parseInt(calories * 69 / 100)} calories / day`
+
+
+    clickMaintain.addEventListener('click', function () {
+      // Set an item in local storage when the div is clicked
+      localStorage.setItem("program", "Maintain Weight");
+      localStorage.setItem("batasKalori", parseInt(calories));
+    });
+
+    clickMildWeight.addEventListener('click', function () {
+      // Set an item in local storage when the div is clicked
+      localStorage.setItem("program", "Mild Weight Loss");
+      localStorage.setItem("batasKalori", parseInt(calories * 90 / 100));
+    });
+
+    clickWeightLoss.addEventListener('click', function () {
+      // Set an item in local storage when the div is clicked
+      localStorage.setItem("program", "Weight Loss");
+      localStorage.setItem("batasKalori", parseInt(calories * 79 / 100));
+    });
+
+    clickExtremeLoss.addEventListener('click', function () {
+      // Set an item in local storage when the div is clicked
+      localStorage.setItem("program", "Extreme Weight Loss");
+      localStorage.setItem("batasKalori", parseInt(calories * 69 / 100));
+    });
+  </script>
+
+</body>
+
+</html>
