@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Program - BodyFits</title>
+  <title>Services - MediNest Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -81,7 +81,21 @@
           <div class="row g-4">
 
             <div class="food-container">
-              <div style="margin-bottom: 50px;">
+              <h2 style="text-align: center; margin-bottom: 40px;">Calendar Meal Planner</h2>
+              <div class="calendar-container">
+                <div class="calendar-header">
+                  <button id="prevMonth" class="calendar-nav-btn">&lt;</button>
+                  <h3 id="currentMonth"></h3>
+                  <button id="nextMonth" class="calendar-nav-btn">&gt;</button>
+                </div>
+                <div class="calendar-grid" id="calendarGrid"></div>
+                <div class="selected-date-info" id="selectedDateInfo" style="display: none;">
+                  <h4 id="selectedDateTitle"></h4>
+                  <div id="selectedDateMenu"></div>
+                </div>
+              </div>
+
+              <div style="margin-bottom: 50px; margin-top: 40px;">
                 <h2 style="text-align: center;">-- Food List --</h2>
               </div>
               <div class="controls">
@@ -101,15 +115,17 @@
                   <button class="button-food" id="cancelFoodBtn">Cancel</button>
                 </div>
               </div>
-              <div id="foodList" class="food-list"></div>
+              <div class="swiper" id="foodCarousel">
+                <div class="swiper-wrapper" id="foodList"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
               <div class="total-container">
                 <p id="totalCalories">Total Calories: 0</p>
                 <p id="calorieLimitLabel">Calories limit: -</p>
               </div>
               <button class="button-food" id="saveMenuBtn">Save Today's Menu</button>
-
-              <h2 style="text-align: center;">Saved Daily Menu</h2>
-              <div id="menuHistory" class="menu-history"></div>
             </div>
           </div>
         </div>
