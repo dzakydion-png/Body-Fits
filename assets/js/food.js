@@ -2,7 +2,7 @@ let foods = JSON.parse(localStorage.getItem('foods')) || [
   { name: "Nasi Goreng", calories: 500, image: "https://buckets.sasa.co.id/v1/AUTH_Assets/Assets/p/website/medias/page_medias/nasi_goreng_oriental.jpg" },
   { name: "Ayam Bakar", calories: 350, image: "https://asset.kompas.com/crops/WTuA1Jn_cJEFlr9UgBhA-72n8yI=/3x0:700x465/1200x800/data/photo/2020/12/30/5fec5602f116e.jpg" },
   { name: "Sate Ayam", calories: 400, image: "https://i.ytimg.com/vi/R0mDzP0A_DQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCKevZCAetrLVnQIhN9FBW8vvPfcg" },
-  { name: "Tempe Goreng", calories: 200, image: "https://img-global.cpcdn.com/recipes/0d240827a5bd59f5/680x781cq80/nasi-uduk-rice-cooker-foto-resep-utama.jpg"}
+  { name: "Tempe Goreng", calories: 200, image: "https://asset.kompas.com/crops/TZmsk7G1DdOaRfrE8nudW6V6Ji0=/0x0:1000x667/1200x800/data/photo/2023/04/27/6449d3bbb940a.jpg"}
 ]
 let selectedFoods = [];
 let calorieLimit = localStorage.getItem("batasKalori");
